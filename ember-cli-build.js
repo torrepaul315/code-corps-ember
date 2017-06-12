@@ -23,10 +23,6 @@ module.exports = function(defaults) {
   }
 
   var app = new EmberApp(defaults, {
-    'ember-cli-babel': {
-      // async, await, etc.
-      includePolyfill: true
-    },
     fingerprint: fingerprintOptions,
     emberCLIDeploy: {
       // runOnPostBuild: (env === 'development') ? 'development-postbuild' : false,
