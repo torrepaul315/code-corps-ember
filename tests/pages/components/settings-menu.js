@@ -1,10 +1,10 @@
-
+import testSelector from 'ember-test-selectors';
 export default {
   scope: '.settings__menu',
   profileLink: {
-    scope: '[href="/settings/profile"]'
+    scope: testSelector('profile-link')
   },
   integrationsLink: {
-    scope: '[href="/settings/integrations"]'
+    scope: testSelector('integrations-link')
   }
 };

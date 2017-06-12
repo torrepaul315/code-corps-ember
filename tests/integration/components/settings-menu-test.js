@@ -9,9 +9,10 @@ let page = PageObject.create(pageComponent);
 moduleForComponent('settings-menu', 'Integration | Component | settings menu', {
   integration: true,
   beforeEach() {
-    let router = this.container.lookup('router:main');
-    router.startRouting(true);
     page.setContext(this);
+  },
+  afterEach() {
+    page.removeContext();
   }
 });
 
